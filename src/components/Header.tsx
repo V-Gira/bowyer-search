@@ -12,7 +12,7 @@ export const Header = () => {
                 <Box sx={{ width: 192, height: 192 }}>
                     <img src="./logo192.png" alt="logo" width={192} />
                 </Box>
-                <Grid container xs spacing={0}>
+                <Grid container item xs spacing={0}>
                     <Grid item xs={12} >
                         <Box display={"flex"} justifyContent={"flex-end"}>
                             <Button size="large" sx={{textTransform: "none", "&:hover":{backgroundColor: "white"}}}>Docs</Button>

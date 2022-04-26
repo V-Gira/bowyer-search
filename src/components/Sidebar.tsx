@@ -3,7 +3,7 @@ import React from "react";
 
 export const Sidebar = () => {
     return (
-    <Grid container direction={"column"}>
+    <Grid container direction={"column"} mt={3}>
         <Grid item><Link href="" underline="hover" variant="h6">Home</Link></Grid>
         <Grid item><Link href="" underline="hover" variant="h6">Creating Packages</Link></Grid>
         <Grid item><Link href="" underline="hover" variant="h6">API</Link></Grid>
