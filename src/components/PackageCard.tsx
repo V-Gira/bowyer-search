@@ -27,9 +27,6 @@ export const PackageCard: React.FC<{
                     <Grid item xs={11}>
                         <Typography variant="body1">{props.description}</Typography>
                     </Grid>
-                    
-                    
-                    
                 </Grid>
                 <Grid item xs={3}>
                     <Typography variant="body1">{props.owner}</Typography>
