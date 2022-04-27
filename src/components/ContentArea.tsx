@@ -65,7 +65,7 @@ export const ContentArea: React.FC<{}> = (props) => {
       };
 
     useEffect(() => {
-        queryAPI(input.query)
+        queryAPI("wireapp") // Hi there!
       }, []);
 
     return (
@@ -90,7 +90,7 @@ export const ContentArea: React.FC<{}> = (props) => {
                     <Grid item xs={12} container>
                         <Grid container p={1}>
                             <Grid item xs={8}>
-                                <Typography variant="h6" color={"primary"}>Package</Typography>
+                                <Typography variant="h6" color={"primary"}>Module</Typography>
                             </Grid>
                             <Grid item xs={3}>
                                 <Typography variant="h6" color={"primary"}>Owner</Typography>

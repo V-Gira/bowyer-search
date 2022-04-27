@@ -3,6 +3,7 @@ import { Header } from "./Header";
 import { Container, Grid } from "@mui/material";
 import { Sidebar } from "./Sidebar";
 import { ContentArea } from "./ContentArea";
+import { Footer } from "./Footer";
 
 export const Page: React.FC<{}> = (props) => {
 
@@ -16,6 +17,7 @@ export const Page: React.FC<{}> = (props) => {
                     </Grid>
                     <Grid item xs={9}>
                         <ContentArea />
+                        <Footer />
                     </Grid>
                 </Grid>
             </Container>
