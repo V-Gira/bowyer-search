@@ -1,12 +1,10 @@
-import React, { useState } from "react";
-import { ThemeProvider, useTheme } from "@mui/material/styles";
+import React from "react";
 import { Header } from "./Header";
 import { Container, Grid } from "@mui/material";
 import { Sidebar } from "./Sidebar";
 import { ContentArea } from "./ContentArea";
 
 export const Page: React.FC<{}> = (props) => {
-    const theme = useTheme();
 
     return (
         <div>

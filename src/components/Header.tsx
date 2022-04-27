@@ -1,9 +1,7 @@
-import React, { useState } from "react";
-import { useTheme } from "@mui/material/styles";
+import React from "react";
 import { Container, Grid, Button, Typography, Box, Link } from "@mui/material";
 
 export const Header = () => {
-    const theme = useTheme();
 
     return(
         <Box sx={{backgroundColor: "#ffcc2f",}}>

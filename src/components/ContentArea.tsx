@@ -15,10 +15,13 @@ export const ContentArea: React.FC<{}> = (props) => {
     const [data, setData] = useState<any>([]);
     const [error, setError] = useState<any>();
     const [loading, setLoading] = useState<boolean>(false);
-    const [page, setPage] = React.useState(1)
+    const [page, setPage] = useState<number>(1)
+
+    // the API I started using requires a key, for the record, I am aware that hosting a key on github secret for a React app is
+    // not secure, and that best practice would require an express server to make the query (any server, you get my drift)
     // const KEY = process.env.REACT_APP_API_KEY
 
-    const _DATA = usePagination(data, 5)
+    const packages = usePagination(data, 5)
     
     const queryAPI = async (query: string) => {
         console.log("hi")
@@ -47,15 +50,15 @@ export const ContentArea: React.FC<{}> = (props) => {
         setInput({ ...input, [prop]: event.target.value });
     };
 
-    const getOwner = (url: string) => {
+    const getOwner = (url: string) => {                     // returns the owner from a Github url
         let owner = url.substring(19)
         owner = owner.substring(0, owner.indexOf("/"))
         return owner
     }
 
-    const handleChangePage = (event:any, newPage:any) => {
+    const handleChangePage = (event:any, newPage:number) => {
         setPage(newPage);
-        _DATA.jump(newPage)
+        packages.jump(newPage)
       };
 
     useEffect(() => {
@@ -81,7 +84,7 @@ export const ContentArea: React.FC<{}> = (props) => {
                             /> 
                     </Stack>
                 </Grid>
-                    {(data.length !== 0)? _DATA.currentData().map((item: any) => (
+                    {(data.length !== 0)? packages.currentData().map((item: any) => (
                         <PackageCard name={item.name} homepage={item.homepage} description={item.description} owner={getOwner(item.repository_url)} stars={item.stars} key={uuidv4()} />
                     )) : 
                     <Grid container item xs={12} justifyContent={"center"}>
