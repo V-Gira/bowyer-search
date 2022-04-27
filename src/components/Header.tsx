@@ -30,7 +30,7 @@ export const Header = () => {
         </Container>
         <Box sx={{backgroundColor: "#2188b6",}}>
             <Container maxWidth="lg">
-                <Typography color={"white"} align="center">
+                <Typography color={"white"} align="center" p={1}>
                     ...psst! You can check out this page's repo <Link href="https://github.com/V-Gira/bowyer-search" target="_blank" rel="noopener" color={"#FFF"}>here</Link>, you can also take a look at my <Link href="https://singularity-app.netlify.app/" target="_blank" rel="noopener" color={"#FFF"}>VTT app</Link>, here's the <Link href="https://github.com/V-Gira/Singularity-App/" target="_blank" rel="noopener" color={"#FFF"}>repo</Link> for that too
                 </Typography>
             </Container>
