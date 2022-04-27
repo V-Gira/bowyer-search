@@ -6,6 +6,12 @@ This is my entry in the following code challenge:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### To-Do
+
+- Make the page responsive
+
+- Set up tests
+
 ## Available Scripts
 
 In the project directory, you can run:
