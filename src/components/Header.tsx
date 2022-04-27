@@ -20,7 +20,7 @@ export const Header = () => {
                         </Box>
                     </Grid>
                     <Grid item xs={12}>
-                        <Typography variant="h2" fontWeight={"bold"}>Bowyer Search</Typography>
+                        <Typography variant="h2" color={"#543729"} fontWeight={"bold"}>Bowyer Search</Typography>
                     </Grid>
                     <Grid item xs={12} mt={-3}>
                         <Typography variant="h6">Powered by <Link href="https://libraries.io/" target="_blank" rel="noopener" underline="hover">libraries.io</Link></Typography>
@@ -28,9 +28,14 @@ export const Header = () => {
                 </Grid>
             </Grid>
         </Container>
-        <Box sx={{
-            height: 25,
-            backgroundColor: "#2188b6",}}></Box>
+        <Box sx={{backgroundColor: "#2188b6",}}>
+            <Container maxWidth="lg">
+                <Typography color={"white"} align="center">
+                    ...psst! You can check out this page's repo <Link href="https://github.com/V-Gira/bowyer-search" target="_blank" rel="noopener" color={"#FFF"}>here</Link>, you can also take a look at my <Link href="https://singularity-app.netlify.app/" target="_blank" rel="noopener" color={"#FFF"}>VTT app</Link>, here's the <Link href="https://github.com/V-Gira/Singularity-App/" target="_blank" rel="noopener" color={"#FFF"}>repo</Link> for that too
+                </Typography>
+            </Container>
+            
+        </Box>
         </Box>
     )
 }
