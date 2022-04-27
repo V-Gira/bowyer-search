@@ -8,7 +8,7 @@ export const Header = () => {
         <Container maxWidth="lg">
             <Grid container pt={1}>
                 <Box sx={{ width: 192, height: 192 }}>
-                    <img src="./logo192.png" alt="logo" width={192} />
+                    <img src="./logo512.png" alt="logo" width={192} />
                 </Box>
                 <Grid container item xs spacing={0}>
                     <Grid item xs={12} >
