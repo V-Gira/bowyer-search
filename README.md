@@ -10,8 +10,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - Make the page responsive
 
-- Set up tests
-
 ## Available Scripts
 
 In the project directory, you can run:
